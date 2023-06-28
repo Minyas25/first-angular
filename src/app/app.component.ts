@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-angular';
+  name = 'Jean';
+  display = false;
+
+  changeName() {
+    this.name += ' autre chose';
+    console.log(this.name);
+    
+  }
+
+  toggleDisplay() {
+    this.display =!this.display;
+  }
 }
+
