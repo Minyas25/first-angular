@@ -9,6 +9,8 @@ export class AppComponent {
   name = 'Jean';
   display = false;
 
+  message = '';
+
   changeName() {
     this.name += ' autre chose';
     console.log(this.name);
@@ -18,5 +20,6 @@ export class AppComponent {
   toggleDisplay() {
     this.display =!this.display;
   }
+
 }
 
