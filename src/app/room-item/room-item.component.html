@@ -1,4 +1,4 @@
-<article [ngClass]="{'closed':!room.opened}">
+<article [ngClass]="{'closed':!room.opened}" (dblclick)="toggleOpen()">
     <h3>{{room.name}}</h3>
     <p>Surface : {{room.surface}}m²</p>
 </article>

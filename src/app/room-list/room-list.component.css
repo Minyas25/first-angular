@@ -1,0 +1,9 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+app-room-item {
+    margin: 10px;
+}

@@ -9,4 +9,8 @@ import { Room } from '../entities';
 export class RoomItemComponent {
   @Input({required:true})
   room:Room;
+
+  toggleOpen() {
+    this.room.opened = !this.room.opened;
+  }
 }
