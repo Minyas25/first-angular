@@ -14,10 +14,10 @@ export class RoomListComponent {
     {id: 3, name: 'Bedroom', surface: 10, opened: false}
   ];
 
-  newRoom:Room = {id: 0, name: '', opened: false, surface: 0};
-
-  addRoom() {
-    this.list.push(this.newRoom);
+  addRoom(room:Room) {
+    this.list.push(room);
+    //Si on veut remettre le formulaire à zéro
+    // this.newRoom = {id: 0, name: '', opened: false, surface: 0};
   }
 
 }

@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RoomListComponent } from './room-list/room-list.component';
 import { RoomItemComponent } from './room-item/room-item.component';
 import { WithParmaComponent } from './with-parma/with-parma.component';
+import { RoomFormComponent } from './room-form/room-form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { WithParmaComponent } from './with-parma/with-parma.component';
     FirstComponent,
     RoomListComponent,
     RoomItemComponent,
-    WithParmaComponent
+    WithParmaComponent,
+    RoomFormComponent
   ],
   imports: [
     BrowserModule,
