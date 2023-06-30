@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class WithParmaComponent {
   @Input()
-  name?:string;
+  name:string = 'Valeur par défaut';
 }
