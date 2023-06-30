@@ -6,20 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'Jean';
-  display = false;
-
-  message = '';
-
-  changeName() {
-    this.name += ' autre chose';
-    console.log(this.name);
-    
-  }
-
-  toggleDisplay() {
-    this.display =!this.display;
-  }
 
 }
-
