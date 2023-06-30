@@ -1,8 +1,5 @@
 <h1>Rooms</h1>
 
 <main>
-    <article *ngFor="let item of list" [ngClass]="{'closed':!item.opened}">
-        <h3>{{item.name}}</h3>
-        <p>Surface : {{item.surface}}m²</p>
-    </article>
+    <app-room-item [room]="item" *ngFor="let item of list" />
 </main>
