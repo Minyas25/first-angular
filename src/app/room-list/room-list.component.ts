@@ -14,5 +14,10 @@ export class RoomListComponent {
     {id: 3, name: 'Bedroom', surface: 10, opened: false}
   ];
 
+  newRoom:Room = {id: 0, name: '', opened: false, surface: 0};
+
+  addRoom() {
+    this.list.push(this.newRoom);
+  }
 
 }
