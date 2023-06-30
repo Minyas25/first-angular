@@ -1,7 +1,7 @@
 <h1>Rooms</h1>
 
 <main>
-    <app-room-item [room]="item" *ngFor="let item of list" />
+    <app-room-item (delete)="deleteRoom($event)" [room]="item" *ngFor="let item of list" />
 </main>
 
 <app-room-form (formSubmit)="addRoom($event)" />

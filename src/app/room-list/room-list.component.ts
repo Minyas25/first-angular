@@ -20,4 +20,8 @@ export class RoomListComponent {
     // this.newRoom = {id: 0, name: '', opened: false, surface: 0};
   }
 
+  deleteRoom(room:Room) {
+    this.list = this.list.filter(item => item != room);
+  }
+
 }

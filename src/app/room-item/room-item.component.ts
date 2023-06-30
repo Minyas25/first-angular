@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Room } from '../entities';
 
 @Component({
@@ -9,8 +9,14 @@ import { Room } from '../entities';
 export class RoomItemComponent {
   @Input({required:true})
   room:Room;
+  @Output()
+  delete = new EventEmitter<Room>();
 
   toggleOpen() {
     this.room.opened = !this.room.opened;
+  }
+
+  buttonClick() {
+    this.delete.emit(this.room);
   }
 }
