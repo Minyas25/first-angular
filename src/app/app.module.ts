@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { BoucleComponent } from './boucle/boucle.component';
@@ -14,6 +15,7 @@ import { WithParmaComponent } from './with-parma/with-parma.component';
 import { RoomFormComponent } from './room-form/room-form.component';
 import { QuizzComponent } from './quizz/quizz.component';
 import { QuizzItemComponent } from './quizz-item/quizz-item.component';
+import { ApiExampleComponent } from './api-example/api-example.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { QuizzItemComponent } from './quizz-item/quizz-item.component';
     WithParmaComponent,
     RoomFormComponent,
     QuizzComponent,
-    QuizzItemComponent
+    QuizzItemComponent,
+    ApiExampleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
