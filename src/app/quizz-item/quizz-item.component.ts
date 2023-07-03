@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Quizz } from '../entities';
 
 @Component({
   selector: 'app-quizz-item',
@@ -9,10 +10,12 @@ export class QuizzItemComponent {
   status = '';
   @Output()
   goodAnswer = new EventEmitter();
+  @Input({required: true})
+  quizz:Quizz;
 
   chooseAnswer(index: number) {
     if (this.status == '') {
-      if (index === 0) {
+      if (index === this.quizz.answer) {
         this.status = 'good';
         this.goodAnswer.emit();
       } else {

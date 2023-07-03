@@ -1,9 +1,7 @@
 
-<h3>Quelle est la couleur bleue ?</h3>
+<h3>{{quizz.question}}</h3>
 
-<button (click)="chooseAnswer(0)">bleue</button>
-<button (click)="chooseAnswer(1)">rouge</button>
-<button (click)="chooseAnswer(2)">vert</button>
+<button (click)="chooseAnswer(index)" *ngFor="let option of quizz.options; let index = index">{{option}}</button>
 
 <p *ngIf="status == 'good'">Bonne réponse !</p>
 <p *ngIf="status == 'bad'">Mauvaise réponse !</p>
