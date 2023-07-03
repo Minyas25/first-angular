@@ -12,7 +12,7 @@ export class QuizzItemComponent {
   goodAnswer = new EventEmitter();
   @Output()
   choose = new EventEmitter();
-  
+
   @Input({required: true})
   quizz:Quizz;
 
@@ -24,7 +24,10 @@ export class QuizzItemComponent {
       } else {
         this.status = 'bad';
       }
-      this.choose.emit();
+      
     }
+  }
+  next() {
+    this.choose.emit();
   }
 }
