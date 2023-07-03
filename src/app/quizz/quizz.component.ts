@@ -8,6 +8,7 @@ import { Quizz } from '../entities';
 })
 export class QuizzComponent {
   score = 0;
+  current = 0;
   list:Quizz[] = [
     {question: 'Question 1', options: ['réponse 1', 'réponse 2'], answer: 0},
     {question: 'Question 2', options: ['réponse 1', 'réponse 2', 'réponse 3'], answer: 1},
@@ -17,5 +18,14 @@ export class QuizzComponent {
 
   incrementScore() {
     this.score++;
+  }
+
+  nextQuestion() {
+    this.current++;
+  }
+
+  reset() {
+    this.score = 0;
+    this.current=0;
   }
 }
