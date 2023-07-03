@@ -12,6 +12,8 @@ import { RoomListComponent } from './room-list/room-list.component';
 import { RoomItemComponent } from './room-item/room-item.component';
 import { WithParmaComponent } from './with-parma/with-parma.component';
 import { RoomFormComponent } from './room-form/room-form.component';
+import { QuizzComponent } from './quizz/quizz.component';
+import { QuizzItemComponent } from './quizz-item/quizz-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { RoomFormComponent } from './room-form/room-form.component';
     RoomListComponent,
     RoomItemComponent,
     WithParmaComponent,
-    RoomFormComponent
+    RoomFormComponent,
+    QuizzComponent,
+    QuizzItemComponent
   ],
   imports: [
     BrowserModule,

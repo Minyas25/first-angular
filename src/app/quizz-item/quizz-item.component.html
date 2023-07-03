@@ -1,0 +1,9 @@
+
+<h3>Quelle est la couleur bleue ?</h3>
+
+<button (click)="chooseAnswer(0)">bleue</button>
+<button (click)="chooseAnswer(1)">rouge</button>
+<button (click)="chooseAnswer(2)">vert</button>
+
+<p *ngIf="status == 'good'">Bonne réponse !</p>
+<p *ngIf="status == 'bad'">Mauvaise réponse !</p>
